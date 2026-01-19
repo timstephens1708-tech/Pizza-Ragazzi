@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offerte Aanvragen - Pizza Ragazzi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Simplified Hero for Subpage -->
+    <section id="offerte-hero" class="vlak small-hero">
+        <nav class="hero-nav">
+            <a href="index.html#hero" class="nav-btn">HOME</a>
+            <a href="index.html#about" class="nav-btn">OVER RAGAZZI</a>
+            <a href="index.html#pricing" class="nav-btn">MOGELIJKHEDEN</a>
+            <a href="index.html#pizzas" class="nav-btn">PIZZA'S</a>
+            <a href="index.html#atmosphere" class="nav-btn">SFEER EN ERVARINGEN</a>
+            <a href="offerte.html" class="nav-btn active">OFFERTE</a>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Offerte op Maat</h1>
+        </div>
+    </section>
+
+    <!-- Offerte Form Section -->
+    <section id="offerte-form-section" class="vlak form-container-section">
+        <div class="content-wrapper">
+            <h2>Vraag een offerte aan</h2>
+            <p>Vul het formulier in en wij nemen zo snel mogelijk contact op.</p>
+
+            <form action="#" method="POST" class="ragazzi-form">
+                <div class="form-group">
+                    <label for="gelegenheid">Gelegenheid</label>
+                    <select id="gelegenheid" name="gelegenheid" required>
+                        <option value="" disabled selected>Kies een gelegenheid</option>
+                        <option value="nieuwjaarsborrel">Nieuwjaarsborrel</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="borrel">Borrel</option>
+                        <option value="feest">Feest</option>
+                        <option value="event_dagprogramma">Event met dagprogramma</option>
+                        <option value="bruiloft">Bruiloft</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="aantal_gasten">Aantal gasten</label>
+                    <input type="number" id="aantal_gasten" name="aantal_gasten" min="30" max="250"
+                        placeholder="Minimaal 30, maximaal 250" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="datum">Datum</label>
+                    <input type="date" id="datum" name="datum">
+                </div>
+
+                <div class="form-group">
+                    <label for="naam">Naam</label>
+                    <input type="text" id="naam" name="naam" placeholder="Uw naam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mailadres</label>
+                    <input type="email" id="email" name="email" placeholder="uw@email.nl" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefoon">Telefoonnummer</label>
+                    <input type="tel" id="telefoon" name="telefoon" placeholder="06 12345678">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht" name="bericht" rows="4"
+                        placeholder="Heeft u nog specifieke wensen?"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Verstuur Aanvraag</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-left">
+            <span>PIZZA RAGAZZI</span>
+        </div>
+        <div class="footer-center">
+            <a href="mailto:info@pizzaragazzi.nl" class="footer-link">Contact</a>
+            <a href="https://www.instagram.com/pizza__ragazzi/" target="_blank" class="footer-link">Instagram</a>
+        </div>
+        <div class="footer-right">
+            <span>&copy; 2026 Pizza Ragazzi</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
