@@ -23,7 +23,7 @@
             <a href="#pricing" class="nav-btn">MOGELIJKHEDEN</a>
             <a href="#pizzas" class="nav-btn">PIZZA'S</a>
             <a href="#atmosphere" class="nav-btn">SFEER EN ERVARINGEN</a>
-            <a href="offerte.html" class="nav-btn">OFFERTE</a>
+            <a href="#offerte" class="nav-btn">OFFERTE</a>
         </nav>
 
         <!-- Centered Content -->
@@ -95,6 +95,65 @@
         <div class="content-wrapper">
             <h2>Sfeer en Ervaringen</h2>
             <ps>Beelden van onze events en sfeerimpressies.</p>
+        </div>
+    </section>
+
+    <!-- Vlak 6: Offerte -->
+    <section id="offerte" class="vlak form-container-section">
+        <div class="content-wrapper">
+            <h2>Vraag een offerte aan</h2>
+            <p>Vul het formulier in en wij nemen zo snel mogelijk contact op.</p>
+
+            <form action="#" method="POST" class="ragazzi-form">
+                <div class="form-group">
+                    <label for="gelegenheid">Gelegenheid</label>
+                    <select id="gelegenheid" name="gelegenheid" required>
+                        <option value="" disabled selected>Kies een gelegenheid</option>
+                        <option value="nieuwjaarsborrel">Nieuwjaarsborrel</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="borrel">Borrel</option>
+                        <option value="feest">Feest</option>
+                        <option value="event_dagprogramma">Event met dagprogramma</option>
+                        <option value="bruiloft">Bruiloft</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="aantal_gasten">Aantal gasten</label>
+                    <input type="number" id="aantal_gasten" name="aantal_gasten" min="30" max="250"
+                        placeholder="Minimaal 30, maximaal 250" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="datum">Datum</label>
+                    <input type="date" id="datum" name="datum">
+                </div>
+
+                <div class="form-group">
+                    <label for="naam">Naam</label>
+                    <input type="text" id="naam" name="naam" placeholder="Uw naam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mailadres</label>
+                    <input type="email" id="email" name="email" placeholder="uw@email.nl" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefoon">Telefoonnummer</label>
+                    <input type="tel" id="telefoon" name="telefoon" placeholder="06 12345678">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht" name="bericht" rows="4"
+                        placeholder="Heeft u nog specifieke wensen?"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Verstuur Aanvraag</button>
+                </div>
+            </form>
         </div>
     </section>
 
